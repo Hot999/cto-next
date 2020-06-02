@@ -1,0 +1,174 @@
+.container_header {
+  max-width: 1680px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 33px 114px 33px 107px;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  .link_logo {
+    color: #EA4641;
+    text-decoration: none;
+  }
+
+  .upper_center {
+    text-transform: uppercase;
+
+  }
+
+  .span_black {
+    color: black;
+  }
+
+  .link {
+    color: #344562;
+    padding: 10px 5px;
+    margin: 0 20px;
+    text-decoration: none;
+
+    &:hover {
+      color: #EA4641;
+    }
+  }
+
+  .active {
+    border-bottom: 2px solid #EA4641;
+  }
+
+
+  .ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .header_menu_toggler {
+    display: none;
+  }
+
+  .menu {
+    width: 30px;
+    height: 30px;
+  }
+
+  .none_link {
+    color: #ea3541;
+  }
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.container_no_padding {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.wrapper_a {
+  color: #344562;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.wrapper_a:hover {
+  color: #ea3541;
+  text-decoration: none;
+
+}
+
+.fix_header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #f3f7f9;
+  z-index: 9999999;
+  left: 0;
+}
+
+.mobile_menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 92px;
+  background-color: #f3f7f9;
+  z-index: 9999999;
+
+  .container_no_padding {
+    flex-wrap: wrap;
+    padding-top: 0;
+  }
+
+  .wrapper_a {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+    .icon {
+      width: 25px;
+      height: 25px;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+
+    span {
+      display: block;
+    }
+  }
+}
+
+.li_mobile {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.ul_mobile {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.link_mob {
+  color: #344562;
+  padding: 10px 5px;
+  margin: 0 20px;
+  text-decoration: none;
+  margin: 20px 0;
+
+  &:hover {
+    color: #EA4641;
+  }
+}
+
+@media(max-width: 1200px) {
+  .container_header {
+    padding: 30px;
+
+    .ul {
+      display: none;
+    }
+
+    .header_menu_toggler {
+      display: block;
+    }
+  }
+}
+
+@media(max-width: 740px) {
+  .mobile_navigation_info {
+    display: none;
+  }
+}
+
+@media(max-width: 578px) {
+  .none_link {
+    display: none;
+  }
+}

@@ -1,0 +1,290 @@
+@font-face {
+  font-family: 'Segoe UI Regular';
+  src: url('../public/fonts/SegoeUI.eot');
+  src: url('../public/fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+  url('../public/fonts/SegoeUI.woff') format('woff'),
+  url('../public/fonts/SegoeUI.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url('../public/fonts/SegoeUI-Bold.eot');
+  src: url('../public/fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../public/fonts/SegoeUI-Bold.woff') format('woff'),
+  url('../public/fonts/SegoeUI-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Segoe UI Regular', sans-serif !important;
+  color: #1c3444;
+}
+
+.roles-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 25px rgba(53, 104, 135, .16);
+  text-decoration: none;
+}
+
+.roles-item {
+  padding: 35px 25px 50px 40px;
+  border-radius: 9px;
+  min-height: 275px;
+  color: #344653 !important;
+  display: block;
+  margin: 0 12px;
+  position: relative;
+  text-decoration: none;
+  background: #fff;
+  transition: transform .3s cubic-bezier(.25, .01, .25, 1), box-shadow .3s cubic-bezier(.25, .01, .25, 1);
+  height: 100%;
+  box-shadow: 0 11px 49.6px rgba(53, 104, 135, .16);
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 43px;
+    right: 27px;
+    width: 12px;
+    height: 21px;
+    background: url("../public/arrow.svg") 0 0 no-repeat #fff;
+    -webkit-transition: .1s linear;
+    transition: .1s linear;
+  }
+}
+
+.roles-item__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 17px;
+  padding-right: 20px;
+  display: inline-block;
+  transition: color .3s cubic-bezier(.25, .01, .25, 1);
+}
+
+.roles-item:hover .roles-item__title {
+  color: #f8414d !important;
+}
+
+.roles-item__desc {
+  font-size: 15px;
+  line-height: 1.35;
+  opacity: .7;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+
+.roles-item__price-desc {
+  font-size: 15px;
+  opacity: .4;
+  display: block;
+}
+
+.roles-item__price {
+  display: block;
+  font-size: 17px;
+  line-height: .73913043;
+  opacity: .5;
+}
+
+.page-layouts:before {
+  content: "";
+  width: 100%;
+  height: 291px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(-4.424deg, transparent 37%, #f3f7f9 0, #f3f7f9);
+  z-index: -1;
+}
+
+.page-layout:before {
+  content: "";
+  width: 100%;
+  height: 291px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(-4.424deg, transparent 37%, #f3f7f9 0, #f3f7f9);
+  z-index: -1;
+}
+
+.benefits-item__title {
+  font-family: 'Segoe UI Bold', sans-serif;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 120%;
+  margin-bottom: 13px;
+  color: #344653;
+}
+
+.section-title {
+  font-family: "Segoe UI Bold", sans-serif;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: #344653;
+  padding-top: 44px;
+  margin-bottom: 15px;
+  text-align: left;
+  max-width: 600px;
+  font-weight: 800;
+}
+
+.reliable-item {
+  text-align: center;
+  color: #344653;
+  padding: 30px 0 10px;
+  margin: 0 auto;
+}
+
+.section--reliable {
+  width: 100%;
+}
+
+.certificate-description__text {
+  position: relative;
+  font-size: 17px;
+  color: #1c3444;
+}
+.certificate-description__text ul {
+  padding: 20px 0;
+  color: #1c3444;
+}
+.page-head__title {
+  margin: 0;
+  font-family: "Segoe UI Bold", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 41px;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: #344653;
+  text-align: left;
+  padding-top: 44px;
+}
+.certificate-description__text ul li {
+  font-size: 17px;
+  line-height: 1.5;
+  padding-left: 37px;
+  margin-left: 0;
+  position: relative;
+  text-indent: 0;
+  list-style: none;
+  color: #1c3444;
+}
+.certificate-description__text ul li:before {
+  content: "\2022";
+  color: #ea3541;
+  position: absolute;
+  left: 21px;
+  top: 0;
+  right: auto;
+}
+.certificate-description__text p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.certificate-price__value {
+  font-size: 30px;
+  line-height: 1.33333333;
+  white-space: nowrap;
+}
+.certificate-price__comment {
+  font-size: 16px;
+  color: #476473;
+  opacity: .5;
+  margin-top: 2px;
+}
+.certificate-price__button:hover {
+  transform: translate3d(0,-2px,0);
+  box-shadow: 0 15px 30px rgba(215,12,23,.3);
+  background: #f8414d;
+  text-decoration: none;
+}
+.certificate-price__button {
+  display: inline-block;
+  text-decoration: none;
+  background: #ea3541;
+  box-shadow: 0 15px 20px rgba(215,12,23,.3);
+  border-radius: 90px;
+  margin-top: 30px;
+  border: 0;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff!important;
+  padding: 9px 37px 14px;
+  position: relative;
+  transition: transform .3s,box-shadow .3s,background .3s!important;
+  outline: none;
+}
+
+.wrapper_for_loader {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bread_icon {
+  width: 15px;
+}
+.breadcrumbs {
+  text-align: center;
+  .breadcrumbs__item {
+    font-size: 14px;
+    color: #344653!important;
+    opacity: .5;
+    margin-right: 3px;
+    transition: opacity .3s;
+  }
+
+  .breadcrumbs__item:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+  .konturIconic {
+    color: #939fa6;
+    opacity: .5;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 480px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .roles-item__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .page-layout:before {
+    height: 638px;
+  }
+}
+
+@media (min-width: 992px) {
+  .roles-item__price {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 22px;
+    opacity: 1;
+    padding-top: 7px;
+  }
+}
+@media (max-width: 568px) {
+  .benefits-item__image, .benefits-item__title, .benefits-item__desc {
+    text-align: center;
+  }
+}

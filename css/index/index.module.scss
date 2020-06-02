@@ -1,0 +1,39 @@
+.main_title {
+  font-family: "Segoe UI Bold", sans-serif;
+  font-style: normal;
+  font-size: 41px;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: #344653;
+  padding-top: 44px;
+  margin-bottom: 15px;
+  text-align: left;
+  max-width: 600px;
+  font-style: normal;
+  font-weight: 800;
+}
+.main_title_h2 {
+  font-family: "Segoe UI Bold", sans-serif;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 1.35;
+  text-transform: uppercase;
+  color: #344653;
+  padding-top: 44px;
+  margin-bottom: 15px;
+  text-align: left;
+  max-width: 600px;
+  font-weight: 800;
+
+  &:after {
+    width: 30px;
+    border-bottom: 2px solid #ea3541;
+  }
+
+}
+
+@media (max-width: 568px) {
+  .main_title, .main_title_h2 {
+  font-size: 30px;
+}
+}
