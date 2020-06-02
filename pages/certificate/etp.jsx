@@ -8,7 +8,7 @@ import Loader from "../../components/loader/loader";
 import Link from "next/link";
 
 export default function Etp() {
-    const url = "http://apiwp.mcdir.ru/wp-json/wp/v2/certificate";
+    const url = "https://apiwp.mcdir.ru/wp-json/wp/v2/certificate";
     const fetcher = (...args) => fetch(...args).then(res => res.json());
     const {data, error} = useSWR(url, fetcher);
 

@@ -11,7 +11,7 @@ import Head from "next/head";
 export default function CertificatePost() {
     const router = useRouter();
 
-    const url = `http://apiwp.mcdir.ru/wp-json/wp/v2/certificate/${router.query.id}`;
+    const url = `https://apiwp.mcdir.ru/wp-json/wp/v2/certificate/${router.query.id}`;
     const fetcher = (...args) => fetch(...args).then(res => res.json());
     const {data, error} = useSWR(url, fetcher);
     if (!data) return <div className="wrapper_for_loader"><Loader/></div>
